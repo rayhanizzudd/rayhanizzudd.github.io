@@ -369,14 +369,14 @@ span {
 
 /* BREAKPOINTS */
 
-@media (mas-width: 1200px) {
+@media (max-width: 1200px) {
     html {
         font-size: 55%;
 
     }
 }
 
-@media (mas-width: 991px) {
+@media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
     }
@@ -405,6 +405,10 @@ span {
 @media (max-width: 880px) {
     #menu-icon {
         display: block;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
     .navbar {
@@ -450,9 +454,14 @@ span {
         flex-direction: column-reverse;
     }
 
-    .about img {
-        width: 70vw;
-        margin-top: 4rem;
+    .stack {
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+
+    .about-img {
+        /* width: 70vw; */
+        margin-top: 4rem;;
     }
 
     .services h2 {
